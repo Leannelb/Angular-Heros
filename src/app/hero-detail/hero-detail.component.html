@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+
+    <h2>{{ hero.name | uppercase }} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+    </div>
+  </div>
+  <!-- *ngFor is just an angular list
+  
+  LOOPS THOUGH ALL HEROES
+      <li *ngFor="let hero of heroes"></li> 
+  
+  ADDS AN EVENT LISTENER TO DO SOMETHING ON CLICK
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+  -->
+  
